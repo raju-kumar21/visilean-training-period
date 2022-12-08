@@ -1,0 +1,52 @@
+package com.springcore.lifecycle;
+
+import org.springframework.beans.factory.DisposableBean;
+import org.springframework.beans.factory.InitializingBean;
+
+public class BeanLifeCycleInterface implements InitializingBean , DisposableBean{
+
+		private String name;
+
+		public BeanLifeCycleInterface(String name) {
+		
+			this.name = name;
+		}
+		
+		public BeanLifeCycleInterface()
+		{
+			
+		}
+
+		public String getName() {
+			return name;
+		}
+
+		public void setName(String name) {
+			
+			System.out.println("Setter method calling.... Interface...");
+			this.name = name;
+		}
+
+		@Override
+		public String toString() {
+			return "BeanLifeCycleInterface [name=" + name + "]";
+		}
+
+		@Override
+		public void afterPropertiesSet() throws Exception {
+			// TODO Auto-generated method stub
+			System.out.println("Init method of Interface......");
+			
+		}
+
+		@Override
+		public void destroy() throws Exception {
+			// TODO Auto-generated method stub
+			System.out.println("Destroy method of Interface......");
+			
+		}
+	
+		
+		
+				
+}

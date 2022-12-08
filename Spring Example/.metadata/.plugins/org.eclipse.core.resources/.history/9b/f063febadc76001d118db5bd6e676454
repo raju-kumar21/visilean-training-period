@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ 		xmlns:context="http://www.springframework.org/schema/context"
+ 		xmlns:p="http://www.springframework.org/schema/p"
+ 
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ https://www.springframework.org/schema/beans/spring-beans.xsd 
+ 
+ http://www.springframework.org/schema/context
+ https://www.springframework.org/schema/context/spring-context.xsd
+ "
+  
+ >
+ 
+<context:annotation-config />
+ 
+ <bean class="com.springCore.autowire.annotation.Address" name="addd">
+ <property name="street" value="Bihra Bazar"/>
+ <property name="city" value="Bhopal"/>
+ </bean>
+ 
+ 
+ <bean class="com.springCore.autowire.annotation1.Address1" name="addd2">
+ <property name="street" value="Bihra "/>
+ <property name="city" value="Patna"/>
+ </bean>
+ 
+ 
+ <!-- <bean class="com.springCore.autowiring.Emp" name="Emp"   autowire="byName" />
+ <bean class="com.springCore.autowiring.Emp" name="Emp"   autowire="byType" />-->
+ 
+  <bean class="com.springCore.autowire.annotation.Emp" name="Emp"    />
+ 
+ <!-- more bean definitions go here -->
+</beans>

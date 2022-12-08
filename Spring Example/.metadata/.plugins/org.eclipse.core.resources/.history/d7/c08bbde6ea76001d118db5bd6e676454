@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ 		xmlns:context="http://www.springframework.org/schema/context"
+ 		xmlns:p="http://www.springframework.org/schema/p"
+  		xmlns:util="http://www.springframework.org/schema/util"
+ 
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ https://www.springframework.org/schema/beans/spring-beans.xsd
+ http://www.springframework.org/schema/util
+ https://www.springframework.org/schema/util/spring-util.xsd
+ 
+ http://www.springframework.org/schema/context
+ https://www.springframework.org/schema/context/spring-context.xsd
+ 
+ ">
+ 
+ <!--Standlone collection  -->
+  <!--Standlone List -->
+ <util:list  list-class="java.util.Vector" id="mybestfriends">
+ 
+ <value>Aman</value>
+<value>Sumit</value> 
+<value>Rakesh</value> 
+<value>praveen</value>
+ 
+ 
+ 
+ </util:list>
+  <!--Standlone Map  -->
+ <util:map  map-class="java.util.TreeMap" id="fees">
+ 
+ 	<entry key="Spring Framework" value="8000" />
+ 	<entry key="Django Framework" value="5000" />
+ 	<entry key="Django Framework" value="5000" />
+ 	<entry key="Django Framework" value="5000" />
+ 	
+ 
+ 
+ </util:map>
+ 
+ <bean class="com.springCore.standalone.collection.Person" name="person">
+		<property name="friends" ref="mybestfriends" />
+		<property name="feestructure"  ref="fees"/>	
+		 	
+ </bean>
+ 
+ 
+ <bean class="com.springCore.standalone.collection.Person" name="person1">
+		<property name="friends" ref="mybestfriends" />
+		
+		 	
+ </bean>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+</beans>

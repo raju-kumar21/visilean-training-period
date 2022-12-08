@@ -1,0 +1,29 @@
+package com.springcore.lifecycle;
+
+public class BeanLifeCycle {
+	 private String name;
+
+	public BeanLifeCycle(String name) {
+
+		this.name = name;
+	}
+	 
+	public BeanLifeCycle() {
+		
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	
+
+	public void setName(String name) {
+		this.name = name;
+	}
+	 
+	@Override
+	public String toString() {
+		return "BeanLifeCycle [name=" + name + "]";
+	}
+}

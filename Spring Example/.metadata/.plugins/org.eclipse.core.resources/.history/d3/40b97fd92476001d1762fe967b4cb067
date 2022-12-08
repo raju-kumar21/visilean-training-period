@@ -1,0 +1,18 @@
+package com.springCore.SpringApp.collections;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class TestClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		ApplicationContext contex=new ClassPathXmlApplicationContext("com/springCore/SpringApp/collections/Cconfig.xml");
+		
+		Emp obj=(Emp)contex.getBean("Emp1");
+		System.out.println(obj);
+
+	}
+
+}

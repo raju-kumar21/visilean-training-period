@@ -1,0 +1,5 @@
+package com.springCore.autowiring;
+
+public class Emp {
+		private Address add;
+}

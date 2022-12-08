@@ -1,0 +1,5 @@
+package comstructorInjection;
+
+public class Calc {
+
+}

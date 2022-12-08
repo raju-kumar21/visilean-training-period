@@ -1,0 +1,43 @@
+ package com.springcore.lifecycle;
+
+public class BeanLifeCycleAnnotation {
+	
+	private String name;
+
+	public BeanLifeCycleAnnotation(String name) {
+		
+		this.name = name;
+	}
+	
+	public BeanLifeCycleAnnotation() {}
+
+	public String getName() {
+		
+		System.out.println("getter method of Annotation");
+		return name;
+	}
+
+	public void setName(String name) {
+		
+		System.out.println("Setter method of Annotaion....");
+		this.name = name;
+	}
+
+	@Override
+	public String toString() {
+		return "BeanLifeCycleAnnotation [name=" + name + "]";
+	}
+	
+	public void init()
+	{
+		System.out.println("Init method of Annotation....");
+	}
+	
+	
+	public void destroy()
+	{
+		System.out.println("Destroy method of Annotation...");
+	}
+	
+	
+}

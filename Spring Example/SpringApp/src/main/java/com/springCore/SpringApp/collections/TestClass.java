@@ -1,0 +1,25 @@
+package com.springCore.SpringApp.collections;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class TestClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		ApplicationContext contex=new ClassPathXmlApplicationContext("com/springCore/SpringApp/collections/Cconfig.xml");
+		
+		Emp obj=(Emp)contex.getBean("Emp1");
+		System.out.println(obj.getName());
+		System.out.println(obj.getPhones());
+		System.out.println(obj.getAddresses());
+		System.out.println(obj.getCourses());
+		System.out.println(obj.getProps() );
+		System.out.println(obj.getPhones().getClass().getName());
+		System.out.println(obj.getAddresses().getClass().getName());
+		System.out.println(obj.getCourses().getClass().getName());
+		System.out.println(obj.getProps().getClass().getName());
+	}
+
+}
