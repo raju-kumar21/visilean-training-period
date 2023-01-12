@@ -1,0 +1,40 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch BootrestbookApplication",
+            "request": "launch",
+            "mainClass": "com.api.book.bootrestbook.BootrestbookApplication"
+        },
+        {
+            "type": "java",
+            "name": "Launch CrudJpaApplication",
+            "request": "launch",
+            "mainClass": "com.crud.jpa.crud_jpa.CrudJpaApplication"
+        },
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch MyvsspringbootappApplication",
+            "request": "launch",
+            "mainClass": "com.springboot.app.myvsspringbootapp.MyvsspringbootappApplication",
+            "projectName": "myvsspringbootapp"
+        },
+        {
+            "type": "java",
+            "name": "Launch SpringbootjpaApplication",
+            "request": "launch",
+            "mainClass": "com.springboot.jpa.springbootjpa.SpringbootjpaApplication",
+            "projectName": "springbootjpa"
+        }
+    ]
+}
